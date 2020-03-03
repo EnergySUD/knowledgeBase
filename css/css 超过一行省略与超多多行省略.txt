@@ -1,0 +1,6 @@
+//超过两行省略号
+overflow: hidden;
+text-overflow: ellipsis;
+white-space:nowrap;
+-webkit-line-clamp: 2;  //设置行数
+-webkit-box-orient: vertical;

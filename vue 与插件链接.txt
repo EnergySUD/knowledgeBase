@@ -1,0 +1,13 @@
+https://router.vuejs.org/zh/  //vue router
+
+https://cli.vuejs.org/zh/  //vue-cli
+
+https://vuex.vuejs.org/zh/  //vue-vuex
+
+http://mockjs.com/  //mockjs
+
+https://www.iconfont.cn/   // 阿里巴巴icon网站
+
+https://ustbhuangyi.github.io/better-scroll/#/  //better-scroll 1.x
+
+https://better-scroll.github.io/docs/zh-CN/guide/   //better-scroll 2.x

@@ -1,0 +1,4 @@
+
+//vue上的代码
+let tabConter = (document.body.clientWidth - this.$refs.tabBox.childNodes[index].offsetWidth) / 2
+this.$refs.tabBoxOuter.scrollLeft = this.$refs.tabBox.childNodes[index].offsetLeft - tabConter

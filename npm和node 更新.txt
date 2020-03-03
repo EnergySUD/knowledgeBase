@@ -1,0 +1,7 @@
+npm£º
+npm i -g npm to update
+ÌÔ±¦¾µÏñ£º
+cnpm i -g npm to update
+
+¸üĞÂnode
+npm install -g n 

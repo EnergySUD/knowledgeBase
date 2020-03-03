@@ -1,0 +1,12 @@
+.top {  
+  box-shadow: 0 -4px 5px -3px red;  
+}  
+.right {  
+  box-shadow: 4px 0 5px -3px green;  
+}  
+.bottom {  
+  box-shadow: 0 4px 5px -3px blue;  
+}  
+.left {  
+  box-shadow: -4px 0 5px -3px orange;  
+} 

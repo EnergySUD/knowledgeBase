@@ -1,0 +1,3 @@
+npm install sass-loader node-sass --save-dev
+
+<style scoped lang="scss"> </style>
