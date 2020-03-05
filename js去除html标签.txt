@@ -1,0 +1,3 @@
+文档链接：https://blog.csdn.net/M82_A1/article/details/90412673
+
+str.replace(/<[^>]+>|&[^>]+;/g,"").trim();//去掉所有的html标签和&nbsp;之类的特殊符合
