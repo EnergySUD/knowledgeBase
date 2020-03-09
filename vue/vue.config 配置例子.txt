@@ -29,7 +29,7 @@ module.exports = {
     // 指定生成的 index.html 的输出路径 (相对于 outputDir)。也可以是一个绝对路径
     indexPath: './',
     // eslint-loader 是否在保存的时候检查
-    lintOnSave: true,
+    lintOnSave: false,
     // webpack配置
     // see https://github.com/vuejs/vue-cli/blob/dev/docs/webpack.md
     chainWebpack: config => {
@@ -103,9 +103,7 @@ module.exports = {
             // pass options to sass-loader
             sass: {
                 // 引入全局变量样式
-                data: `
-                    @import "@/stylePath/theme.scss;
-                `
+                data: ``
             }
         },
         // 启用 CSS modules for all css / pre-processor files.
