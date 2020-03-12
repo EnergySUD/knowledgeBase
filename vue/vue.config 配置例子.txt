@@ -15,10 +15,6 @@ const cdn = {
     ]
 }
 
-function resolve(dir) {
-    return path.join(__dirname, dir)
-}
-
 module.exports = {
     // 基本路径
     publicPath: './',
@@ -39,10 +35,10 @@ module.exports = {
             .end();
         // 配置别名
         config.resolve.alias
-            .set("@", resolve("src"))
-            .set("@img", resolve("src/assets/images"))
-            .set("@css", resolve("src/assets/styles/css"))
-            .set("@scss", resolve("src/assets/styles/scss"));
+            .set("@", path.resolve("src"))
+            .set("@img", path.resolve("src/assets/images"))
+            .set("@css", path.resolve("src/assets/styles/css"))
+            .set("@scss", path.resolve("src/assets/styles/scss"));
         // 生产环境配置
         if (isProduction) {
             // 删除预加载
@@ -76,8 +72,8 @@ module.exports = {
                 //生产环境自动删除console
                 new UglifyJsPlugin({
                     uglifyOptions: {
+						warnings: false,
                         compress: {
-                            warnings: false,
                             drop_debugger: true,
                             drop_console: true,
                         },
