@@ -1,0 +1,6 @@
+curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install >> brew_install
+
+创建文件
+
+教程：
+https://www.jianshu.com/p/fdf7e316f096
