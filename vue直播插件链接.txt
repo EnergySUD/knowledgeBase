@@ -1,0 +1,11 @@
+flash版：（只能pc端，并且要安装flash插件）
+https://github.com/surmon-china/vue-video-player
+
+https://blog.csdn.net/qq_39844855/article/details/88074567
+
+
+flvjs版：（只能pc端，不依赖flash，文件格式flv格式）
+https://github.com/Bilibili/flv.js
+
+hlsjs版：（支持移动端，文件格式m3u8格式）
+https://github.com/video-dev/hls.js
