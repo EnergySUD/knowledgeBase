@@ -1,11 +1,20 @@
 flash版：（只能pc端，并且要安装flash插件）
 https://github.com/surmon-china/vue-video-player
 
+import hls from 'videojs-contrib-hls'
+https://www.cnblogs.com/Byme/p/11419131.html
+
+import 'videojs-flash'
 https://blog.csdn.net/qq_39844855/article/details/88074567
 
+测试链接: rtmp://58.200.131.2:1935/livetv/hunantv
+rtmp://202.69.69.180:443/webcast/bshdlive-pc
 
 flvjs版：（只能pc端，不依赖flash，文件格式flv格式）
 https://github.com/Bilibili/flv.js
 
 hlsjs版：（支持移动端，文件格式m3u8格式）
 https://github.com/video-dev/hls.js
+测试链接: http://ivi.bupt.edu.cn/hls/cctv6hd.m3u8
+http://ivi.bupt.edu.cn/hls/cctv3hd.m3u8
+http://ivi.bupt.edu.cn/hls/cctv1hd.m3u8
