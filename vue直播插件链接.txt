@@ -18,3 +18,9 @@ https://github.com/video-dev/hls.js
 测试链接: http://ivi.bupt.edu.cn/hls/cctv6hd.m3u8
 http://ivi.bupt.edu.cn/hls/cctv3hd.m3u8
 http://ivi.bupt.edu.cn/hls/cctv1hd.m3u8
+
+
+腾讯直播插件
+https://cloud.tencent.com/document/product/454/7503
+
+<script src="https://imgcache.qq.com/open/qcloud/video/vcplayer/TcPlayer-2.3.3.js" charset="utf-8"></script>;
