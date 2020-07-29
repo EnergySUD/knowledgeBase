@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>图片压缩</title>
+	</head>
+	<body>
+		<input type="file" class="file" value="上传图片" accept="image/*" onchange="onChange()"/>
+		
+		<div>
+			<div>上传的图片</div>
+			<div class="img1" ></div>
+			
+		</div>
+		<div>
+			<div>压缩后的图片</div>
+			<div class="img2"></div>
+		</div>
+		
+		<script type="text/javascript">
+			console.log(window)
+			/*
+				config 参数
+					width  		图片宽度
+					height 		图片高度
+					maxWidth 	图片最大宽度
+					maxHeight 图片最大高度
+					quality  	图片质量
+			*/
+			
+			function onChange(config={}){
+				let event = window.event
+				let files = event.target.files
+				let reader = new FileReader();
+				console.log(files)
+				// 将图片2将转成 base64 格式
+				reader.readAsDataURL(files[0]);
+				// 读取成功后的回调
+				reader.onload = function () {
+					let canvas = document.createElement('canvas')
+					let ctx = canvas.getContext('2d')
+					let result = this.result;
+					let img = new Image();
+					img.src = result;
+					img.onload = function () {
+						let that = this
+						let size = renderSize(that.src.substr(that.src.indexOf(',') + 1).length * 0.75)
+						document.querySelector('.img1').innerHTML = `
+							<img src="${result}" width="100%" alt="">
+							<p>图片宽度：${that.width}</p>
+							<p>图片高度：${that.height}</p>
+							<p>图片大小：${size}</p>
+						`
+						
+						var w = that.width
+						var h = that.height
+						var scale = w / h
+						w = config.width || config.height * scale || w
+						h = config.height || config.width / scale || h
+						// 最大宽高如有限制时的处理
+						w = config.maxWidth && w > config.maxWidth ? config.maxWidth : w
+						h = config.maxHeight && h > config.maxHeight ? config.maxHeight : h
+						w = Math.min(w, h * scale) || w
+						h = Math.min(h, w / scale) || h
+						var quality = 0.8 // 默认图片质量为0.7
+						// 创建属性节点
+						var anw = document.createAttribute('width')
+						anw.nodeValue = w
+						var anh = document.createAttribute('height')
+						anh.nodeValue = h
+						canvas.setAttributeNode(anw)
+						canvas.setAttributeNode(anh)
+						ctx.drawImage(that, 0, 0, w, h)
+						if (config.quality && config.quality <= 1 && config.quality > 0) {
+							quality = config.quality
+						}
+						// var base64 = canvas.toDataURL('image/png', quality)  //  png 图片的质量是无法选择的
+						var base64 = canvas.toDataURL('image/jpeg', quality)
+						// 在指定图片格式为 image/jpeg 或 image/webp的情况下，可以从 0 到 1 的区间内选择图片的质量。如果超出取值范围，将会使用默认值 0.92。其他参数会被忽略。
+									
+						console.log(base64)
+						images(base64)
+					}
+				}
+			}
+			
+			function images(result){
+				let img = new Image();
+				img.src = result;
+				img.onload = function () {
+					let that = this
+					let size = renderSize(that.src.substr(that.src.indexOf(',') + 1).length * 0.75)
+					document.querySelector('.img2').innerHTML = `
+						<img src="${result}" width="100%" alt="">
+						<p>图片宽度：${that.width}</p>
+						<p>图片高度：${that.height}</p>
+						<p>图片大小：${size}</p>
+					`
+				}
+			}
+			
+			function renderSize(value){
+			    if(null==value||value==''){
+			        return "0 Bytes";
+			    }
+			    var unitArr = new Array(" Bytes"," KB"," MB"," GB"," TB"," PB"," EB"," ZB"," YB");
+			    var index=0;
+			    var srcsize = parseFloat(value);
+			    index=Math.floor(Math.log(srcsize)/Math.log(1024));
+			    var size =srcsize/Math.pow(1024,index);
+			    size=size.toFixed(2);//保留的小数位数
+			    return size+unitArr[index];
+			}
+			
+		</script>
+	</body>
+</html>
