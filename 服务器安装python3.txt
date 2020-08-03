@@ -1,8 +1,0 @@
-yum install python3  // CentOS7 以上的版本
-
-
-切换python3版本
-alias python='/usr/bin/python3'
-
-切换python2版本
-alias python='/usr/bin/python2'

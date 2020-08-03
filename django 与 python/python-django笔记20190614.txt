@@ -1,0 +1,249 @@
+查询链接:https://docs.djangoproject.com/en/1.11/topics/db/queries/#complex-lookups-with-q-objects
+pycharm :格式化代码，全选 ctrl+alt+i 
+
+引用mysql数据库 win7
+pip install pymysql==0.9.2
+
+pip install mysqlclient==1.3.12
+
+//
+
+pip install django_redis
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django_redis.cache.RedisCache',
+        'LOCATION': 'redis://127.0.0.1:6379/2',
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        },
+    },
+}
+
+//
+
+//修改代码后重新加载django代码
+cd /data/mysite
+先创建uwsgi文件，然后进入uwsgi，创建uwsgi.pid
+vi uwsgi.pid
+vi uwsgi.status（可不需要）
+
+保存退出
+touch uwsgi.pid
+touch uwsgi.status（可不需要）
+
+修改uwsgin.ini配置文件，添加pid文件和status文件的配置
+
+stats=%(chdir)/uwsgi/uwsgi.status
+pidfile=%(chdir)/uwsgi/uwsgi.pid
+
+uwsgi uwsgi.ini（启动uwsgi）
+uwsgi --reload uwsgi/uwsgi.pid（重启uwsgi）
+uwsgi --stop uwsgi/uwsgi.pid（关闭uwsgi）
+
+cat uwsgi/uwsgi.pid （查看uwsgi的pid）
+
+关闭进程：kill -9 <进程 pid>
+
+①	启动supervisor输入如下命令，使用具体的配置文件执行：supervisord -c /usr/bin/supervisord.conf
+如果启动失败：unlink /tmp/supervisor.sock
+②	关闭：supervisorctl shutdown （supervisorctl -c /usr/bin/supervisord.conf shutdown）
+③	重启：supervisorctl reload （supervisorctl -c /usr/bin/supervisord.conf reload）
+
+如果重启不了：
+查看运行情况：ps -ef | grep supervisord
+kill -9 <进程 pid>
+
+
+检查浏览器插件
+pip install pyyaml ua-parser user-agents
+
+bs4插件
+pip install beautifulsoup4==4.5.1
+
+lxml插件
+pip install lxml==4.4.1
+
+生成requirements.txt文件：pip freeze > requirements.txt
+
+运行：python manage.py runserver
+
+同步数据库：python manage.py migrate
+
+创建超级用户：python manage.py createsuperuser
+
+超级用户密码修改:changepassword test（test是用户名）
+
+创建app: python manage.py startapp app_name
+
+数据库表转化为django的model: python manage.py inspectdb >> dome1/models.py
+
+查看8000端口：netstat -tulpn | grep :8000
+
+关闭端口：kill -9 <进程 pid>
+
+启动nginx：systemctl start nginx
+
+nginx重启：/usr/sbin/nginx -s reload
+
+启动uwsgi: uwsgi uwsgi.ini
+
+重启uwsgi：uwsgi --reload uwsgi/uwsgi.pid
+
+django下载静态文件：python manage.py collectstatic
+
+清空数据库-恢复数据库到最初状态：python manage.py flush
+
+models数据在数据库生成表：1，python manage.py makemigrations （appname只生成某一app数据库同步的脚本）（生成数据库同步的脚本）  2，python manage.py migrate （数据库同步生成对应的表）
+
+数据库删除某表中的某条数据:(Publisher是models中的类)Publisher.objects.filter(city='北京').delete()
+
+导入包：from demo1.models import *
+
+查询某表的所有数据:Publisher.objects.all()
+
+查询某一条数据:Publisher.objects.get(id=1)
+
+
+
+添加数据:Author.objects.create(name='苏德')
+
+另一种添加数据：
+auth = Author()
+auth.name = '苏德'
+auth.save()
+ 
+插入多对多的关系
+book = Book.objects.get(id=1)
+author = Author.objects.get(id=1)
+book.authors.add(author)
+
+
+修改数据:
+auth = Author.objects.get(id=1)( Author.objects.get 只能查询一个结果和必须存在的相应的数据，否则会出异常)
+auth.name = '德德'
+auth.save()
+
+修改数据:
+Publisher.objects.filter(id=1).update(city='中山',website='http://www.baidu.com')
+
+模糊查询(查询id有1的对象,并且返回元组):
+Publisher.objects.filter(id__contains=1).values()
+
+from django.db.models import Sum,Q
+Publisher.objects.filter(~Q(id=1)) // 查询id不等于1.
+
+//
+__exact 精确等于 like 'aaa'
+__iexact 精确等于 忽略大小写 ilike 'aaa'
+__contains 包含 like '%aaa%'
+__icontains 包含 忽略大小写 ilike '%aaa%'，但是对于sqlite来说，contains的作用效果等同于icontains。
+__gt 大于
+__gte 大于等于
+__lt 小于
+__lte 小于等于
+__in 存在于一个list范围内
+__startswith 以...开头
+__istartswith 以...开头 忽略大小写
+__endswith 以...结尾
+__iendswith 以...结尾，忽略大小写
+__range 在...范围内
+__year 日期字段的年份
+__month 日期字段的月份
+__day 日期字段的日
+__isnull=True/False
+//
+
+Book.objects.get(**kwargs)(Book对象)(Book.objects.get 只能查询一个结果和必须存在的相应的数据，否则会出异常)
+all()(QuerySet对象)（查询所有结果）
+filter(**kwargs)(QuerySet对象)（条件查询,查询条件匹配的结果）
+exclude(**kwargs)(QuerySet对象)（条件查询,查询条件不匹配的结果）
+order_by(*fields)(对查询结果排序)
+reverse()(对查询结果反向排序)
+distinct()(从返回结果中，剔除重复记录)
+values(*fields)(ValuesQuerySet对象，返回字典序列)
+values_list(*fields)(与values()相似，但返回元组序列)
+count():返回数据库中匹配查询（QuerySet）的对象数量
+first():返回第一条记录，等价于[:1][0]
+last():返回最后一条记录，等价于[::-1][0]
+exists():如果QuerySet包含有数据，就返回true否则就返回false
+delete（）删除
+
+外键
+on_delete=models.SET_NULL 不级联删除
+on_delete=models.CASCADE  级联删除
+
+
+实例:
+1,查询id为1的书籍信息，并且只显示书籍名称和出版日期
+Book.objects.filter(id=1).values('title','publication_date')
+或Book.objects.filter(id=1).values_list('title','publication_date')
+
+2,出版社id降序排列
+Publisher.objects.all().order_by('-id') 升序 Publisher.objects.all().order_by('id')
+
+3，出版社查询城市，但不要重复
+Publisher.objects.all().values('city').distinct()
+
+
+多表查询
+AuthorDetail.objects.values('sex','author__name') #author__name 查询author表里的name
+Book.objects.filter(author__name='苏德').values('title')
+Book.objects.filter(publisher__name='苏德').values('author__name')
+
+分组查询：（返回一个QuerySet）
+annotate(*args,**kwargs)
+from django.db.models import *
+
+3.查询各个作者的书籍的总价
+Book.objects.values('authors__name').annotate(Sum('price'))
+
+4.各个出版社最便宜的书价
+Book.objects.values('publisher__name').annotate(Min('price'))
+
+
+聚合查询：（返回一个对象）
+aggregate(*args,**kwargs)
+from django.db.models import *
+
+1，查询广东人民从出版社书籍的数量
+Publisher.objects.filter(name='广东人民出版社').aggregate(mycount = Count('name'))
+
+2,胡大海的书籍的总价
+Book.objects.filter(authors__name = '苏德').aggregate(sum = Sum('price'))
+
+
+
+
+
+
+使用原生的sql：
+
+1，extra:结果集修改器，一种提供额外查询参数的机制。
+
+(1)Book.objects.filter(publisher__name='广东人民出版社').extra(where=['price>50'])
+
+同上。Book.objects.filter(publisher__name='广东人民出版社',price__gt=50)
+
+(2)Book.objects.extra(select={'count':'select count(*) from hello_book'})
+
+2，raw，执行原始sql并返回模型实例。
+(1)Book.objects.raw('select * from hello_book')
+
+3，直接执行自定义sql
+from django.db import connection
+cursor = connection.cursor()
+
+插入操作：
+cursor.execute("insert into hello_author(name) values('郭敬明')")
+
+更新操作:
+cursor.execute("update hello_author set name='韩寒' where name='郭敬明'")
+
+删除操作:
+cursor.execute("delete from hello_author where name='郭敬明'")
+
+查询操作:
+cursor.execute("select * from hello_author")
+raw = cursor.fetchone()  #返回结果行
+cursor.fetchall()

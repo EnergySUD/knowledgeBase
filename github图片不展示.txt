@@ -1,9 +1,0 @@
-教程链接 ：https://www.ioiox.com/archives/62.html
-
-sudo vi /etc/hosts
-
-199.232.4.133 raw.githubusercontent.com
-
-vim 编辑器中 i 键是输入；
-
-输入完就 按ESC，然后输入:wq 保存退出
