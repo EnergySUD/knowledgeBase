@@ -1,0 +1,34 @@
+https://www.antdv.com/docs/vue/introduce-cn/      	// Ant Design of Vue 文档
+https://github.com/    								//github 网站
+https://cn.vuejs.org/								//vue官方文档
+https://cli.vuejs.org/zh/							//vue-cli官方文档
+https://router.vuejs.org/zh/						//vue-router官方文档
+https://vuex.vuejs.org/zh/							//vuex 官方文档
+https://portal.qiniu.com/create						//七牛云存储网站
+http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html			//Flex 布局教程：语法篇
+http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html	//CSS Grid 网格布局教程
+https://www.iconfont.cn/							//阿里巴巴icon网站
+https://element.eleme.cn/#/zh-CN/component/installation				//elementUI官方文档
+https://antv.gitee.io/zh							//蚂蚁数据可视化网站
+https://chrome.zzzmh.cn/							//谷歌浏览器插件
+https://youzan.github.io/vant/#/zh-CN/				//vant 移动端UI插件
+https://lbs.qq.com/webApi/javascriptGL/glGuide/glOverview			//腾讯地图官方网站
+https://juejin.im/									//掘金官方文档
+https://mdnice.com/									//markdown 编写文档网站
+https://docs.djangoproject.com/zh-hans/3.0/			//django 官方文档
+https://www.githubs.cn/top							//github 开源排行网站
+http://lbsyun.baidu.com/							//百度地图开放平台
+https://cloud.tencent.com/document/product/881/20207				//腾讯web播放器插件文档
+https://help.aliyun.com/document_detail/125570.html					//阿里云web播放器插件文档
+https://github.com/hotoo/pinyin						//汉字转拼音插件
+https://www.processon.com/							//在线写流程图
+https://github.com/bpmn-io/bpmn-js					//工作流插件github
+https://developers.weixin.qq.com/doc/				//微信文档网站
+
+
+
+
+
+
+
+

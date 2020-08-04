@@ -1,3 +1,0 @@
-https://github.com/MrRio/jsPDF    //jsPDF 插件
-
-https://github.com/creotip/vue-particles   //粒子背景插件
