@@ -1,40 +1,40 @@
-½Ì³ÌÁ´½Ó£ºhttps://www.liaoxuefeng.com/wiki/896043488029600/898732792973664
+æ•™ç¨‹é“¾æ¥ï¼šhttps://www.liaoxuefeng.com/wiki/896043488029600/898732792973664
 
 
-´´½¨ssh
+åˆ›å»ºssh
 
-½Ì³ÌÁ´½Ó£ºhttps://git-scm.com/book/zh/v2/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%90-SSH-%E5%85%AC%E9%92%A5
+æ•™ç¨‹é“¾æ¥ï¼šhttps://git-scm.com/book/zh/v2/%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E7%9A%84-Git-%E7%94%9F%E6%88%90-SSH-%E5%85%AC%E9%92%A5
 
 ssh-keygen -t rsa -C 'youremail@qq.com'
-ÊäÈëºóÒ»Ö±»Ø³µ¡£²éÑ¯ id_rsa.pub ÎÄ¼ş£¬È»ºó¸´ÖÆÀïÃæµÄÄÚÈİ
+è¾“å…¥åä¸€ç›´å›è½¦ã€‚æŸ¥è¯¢ id_rsa.pub æ–‡ä»¶ï¼Œç„¶åå¤åˆ¶é‡Œé¢çš„å†…å®¹
 
 
-Ô¶³ÌÏÂÔØgit²Ö¿âÎÄ¼ş£º
+è¿œç¨‹ä¸‹è½½gitä»“åº“æ–‡ä»¶ï¼š
 git clone git@github.com:michaelliao/gitskills.git
 
-git add . // ĞŞ¸Ä¹ıµÄÎÄ¼şÌí¼Óµ½»º´æÇø
-git commit  -m 'frist commit' // ½«Ôİ´æÇøÀïµÄ¸Ä¶¯¸øÌá½»µ½±¾µØµÄ°æ±¾¿â
+git add . // ä¿®æ”¹è¿‡çš„æ–‡ä»¶æ·»åŠ åˆ°ç¼“å­˜åŒº
+git commit  -m 'frist commit' // å°†æš‚å­˜åŒºé‡Œçš„æ”¹åŠ¨ç»™æäº¤åˆ°æœ¬åœ°çš„ç‰ˆæœ¬åº“
 
-git push origin master // °Ñ±¾µØmaster·ÖÖ§µÄ×îĞÂĞŞ¸ÄÍÆËÍÖÁGitHub
+git push origin master // æŠŠæœ¬åœ°masteråˆ†æ”¯çš„æœ€æ–°ä¿®æ”¹æ¨é€è‡³GitHub
 
-git branch  //²é¿´±¾µØ·ÖÖ§
+git branch  //æŸ¥çœ‹æœ¬åœ°åˆ†æ”¯
 
-git branch -r //²é¿´Ô¶³Ì·ÖÖ§
+git branch -r //æŸ¥çœ‹è¿œç¨‹åˆ†æ”¯
 
-git branch -a //²é¿´ËùÓĞ·ÖÖ§
+git branch -a //æŸ¥çœ‹æ‰€æœ‰åˆ†æ”¯
 
-git checkout -b develop  //ĞÂ½¨±¾µØ·ÖÖ§
+git checkout -b develop  //æ–°å»ºæœ¬åœ°åˆ†æ”¯
 
-git push origin develop:develop  //°ÑĞÂ½¨µÄ±¾µØ·ÖÖ§pushµ½Ô¶³Ì·şÎñÆ÷£¬Ô¶³Ì·ÖÖ§Óë±¾µØ·ÖÖ§Í¬Ãû£¨µ±È»¿ÉÒÔËæÒâÆğÃû£©  
+git push origin develop:develop  //æŠŠæ–°å»ºçš„æœ¬åœ°åˆ†æ”¯pushåˆ°è¿œç¨‹æœåŠ¡å™¨ï¼Œè¿œç¨‹åˆ†æ”¯ä¸æœ¬åœ°åˆ†æ”¯åŒåï¼ˆå½“ç„¶å¯ä»¥éšæ„èµ·åï¼‰  
 
-git checkout develop //ÇĞ»»·ÖÖ§
+git checkout develop //åˆ‡æ¢åˆ†æ”¯
 
-git merge develop // ºÏ²¢·ÖÖ§£¬ºÏ²¢Ç°ÏÈÇĞ»» master·ÖÖ§
+git merge develop // åˆå¹¶åˆ†æ”¯ï¼Œåˆå¹¶å‰å…ˆåˆ‡æ¢ masteråˆ†æ”¯
 
-git pull origin master // À­È¡masterÄÚÈİ
+git pull origin master // æ‹‰å–masterå†…å®¹
 
-//²Ö¿â³õÊ¼»¯ºóÌí¼ÓÔ¶³Ì²Ö¿âÁ´½Ó
+//ä»“åº“åˆå§‹åŒ–åæ·»åŠ è¿œç¨‹ä»“åº“é“¾æ¥
 git init
 git remote add origin git@github.com:EnergySUD/knowledgeBase.git
-//ĞŞ¸ÄÔ¶³Ì²Ö¿âÁ´½Ó
+//ä¿®æ”¹è¿œç¨‹ä»“åº“é“¾æ¥
 git remote set-url origin git@github.com:EnergySUD/knowledgeBase.git
