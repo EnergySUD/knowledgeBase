@@ -1,6 +1,7 @@
-npm£º
+npm:
 npm i -g npm to update
-ÌÔ±¦¾µÏñ£º
+
+ÌÔ±¦¾µÏñ:
 cnpm i -g npm to update
 
 ¸üĞÂnode
