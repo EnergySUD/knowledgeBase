@@ -1,0 +1,3 @@
+主要利用的是css中的pointer-events属性
+
+教程链接：https://www.cnblogs.com/DarkMaster/p/7747480.html

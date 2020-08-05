@@ -13,6 +13,7 @@ https://antv.gitee.io/zh							//蚂蚁数据可视化网站
 https://chrome.zzzmh.cn/							//谷歌浏览器插件
 https://youzan.github.io/vant/#/zh-CN/				//vant 移动端UI插件
 https://lbs.qq.com/webApi/javascriptGL/glGuide/glOverview			//腾讯地图官方网站
+https://lbs.qq.com/webApi/component/componentGuide/componentGeolocation		//腾讯地图根据经纬度获取地址
 https://juejin.im/									//掘金官方文档
 https://mdnice.com/									//markdown 编写文档网站
 https://docs.djangoproject.com/zh-hans/3.0/			//django 官方文档
