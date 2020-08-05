@@ -1,8 +1,8 @@
 npm:
 npm i -g npm to update
 
-ÌÔ±¦¾µÏñ:
+æ·˜å®é•œåƒ:
 cnpm i -g npm to update
 
-¸üĞÂnode
+æ›´æ–°node
 npm install -g n 
