@@ -7,3 +7,5 @@ https://atomiks.github.io/tippyjs/  				//提示插件
 https://github.com/bpmn-io/bpmn-js					//工作流插件github
 
 https://github.com/hotoo/pinyin						//汉字转拼音插件
+
+https://github.com/Tencent/vConsole					//移动端vconsole

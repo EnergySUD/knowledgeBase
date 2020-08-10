@@ -1,31 +1,31 @@
-https://www.antdv.com/docs/vue/introduce-cn/      	// Ant Design of Vue ÎÄµµ
-https://github.com/    								//github ÍøÕ¾
-https://cn.vuejs.org/								//vue¹Ù·½ÎÄµµ
-https://cli.vuejs.org/zh/							//vue-cli¹Ù·½ÎÄµµ
-https://router.vuejs.org/zh/						//vue-router¹Ù·½ÎÄµµ
-https://vuex.vuejs.org/zh/							//vuex ¹Ù·½ÎÄµµ
-https://portal.qiniu.com/create						//ÆßÅ£ÔÆ´æ´¢ÍøÕ¾
-http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html			//Flex ²¼¾Ö½Ì³Ì£ºÓï·¨Æª
-http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html	//CSS Grid Íø¸ñ²¼¾Ö½Ì³Ì
-https://www.iconfont.cn/							//°¢Àï°Í°ÍiconÍøÕ¾
-https://element.eleme.cn/#/zh-CN/component/installation				//elementUI¹Ù·½ÎÄµµ
-https://antv.gitee.io/zh							//ÂìÒÏÊı¾İ¿ÉÊÓ»¯ÍøÕ¾
-https://chrome.zzzmh.cn/							//¹È¸èä¯ÀÀÆ÷²å¼ş
-https://youzan.github.io/vant/#/zh-CN/				//vant ÒÆ¶¯¶ËUI²å¼ş
-https://lbs.qq.com/webApi/javascriptGL/glGuide/glOverview			//ÌÚÑ¶µØÍ¼¹Ù·½ÍøÕ¾
-https://lbs.qq.com/webApi/component/componentGuide/componentGeolocation		//ÌÚÑ¶µØÍ¼¸ù¾İ¾­Î³¶È»ñÈ¡µØÖ·
-https://juejin.im/									//¾ò½ğ¹Ù·½ÎÄµµ
-https://mdnice.com/									//markdown ±àĞ´ÎÄµµÍøÕ¾
-https://docs.djangoproject.com/zh-hans/3.0/			//django ¹Ù·½ÎÄµµ
-https://www.githubs.cn/top							//github ¿ªÔ´ÅÅĞĞÍøÕ¾
-http://lbsyun.baidu.com/							//°Ù¶ÈµØÍ¼¿ª·ÅÆ½Ì¨
-https://cloud.tencent.com/document/product/881/20207				//ÌÚÑ¶web²¥·ÅÆ÷²å¼şÎÄµµ
-https://help.aliyun.com/document_detail/125570.html					//°¢ÀïÔÆweb²¥·ÅÆ÷²å¼şÎÄµµ
-https://github.com/hotoo/pinyin						//ºº×Ö×ªÆ´Òô²å¼ş
-https://www.processon.com/							//ÔÚÏßĞ´Á÷³ÌÍ¼
-https://github.com/bpmn-io/bpmn-js					//¹¤×÷Á÷²å¼şgithub
-https://developers.weixin.qq.com/doc/				//Î¢ĞÅÎÄµµÍøÕ¾
-
+https://www.antdv.com/docs/vue/introduce-cn/      	// Ant Design of Vue æ–‡æ¡£
+https://github.com/    								//github ç½‘ç«™
+https://cn.vuejs.org/								//vueå®˜æ–¹æ–‡æ¡£
+https://cli.vuejs.org/zh/							//vue-cliå®˜æ–¹æ–‡æ¡£
+https://router.vuejs.org/zh/						//vue-routerå®˜æ–¹æ–‡æ¡£
+https://vuex.vuejs.org/zh/							//vuex å®˜æ–¹æ–‡æ¡£
+https://portal.qiniu.com/create						//ä¸ƒç‰›äº‘å­˜å‚¨ç½‘ç«™
+http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html			//Flex å¸ƒå±€æ•™ç¨‹ï¼šè¯­æ³•ç¯‡
+http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html	//CSS Grid ç½‘æ ¼å¸ƒå±€æ•™ç¨‹
+https://www.iconfont.cn/							//é˜¿é‡Œå·´å·´iconç½‘ç«™
+https://element.eleme.cn/#/zh-CN/component/installation				//elementUIå®˜æ–¹æ–‡æ¡£
+https://antv.gitee.io/zh							//èš‚èšæ•°æ®å¯è§†åŒ–ç½‘ç«™
+https://chrome.zzzmh.cn/							//è°·æ­Œæµè§ˆå™¨æ’ä»¶
+https://youzan.github.io/vant/#/zh-CN/				//vant ç§»åŠ¨ç«¯UIæ’ä»¶
+https://lbs.qq.com/webApi/javascriptGL/glGuide/glOverview			//è…¾è®¯åœ°å›¾å®˜æ–¹ç½‘ç«™
+https://lbs.qq.com/webApi/component/componentGuide/componentGeolocation		//è…¾è®¯åœ°å›¾æ ¹æ®ç»çº¬åº¦è·å–åœ°å€
+https://juejin.im/									//æ˜é‡‘å®˜æ–¹æ–‡æ¡£
+https://mdnice.com/									//markdown ç¼–å†™æ–‡æ¡£ç½‘ç«™
+https://docs.djangoproject.com/zh-hans/3.0/			//django å®˜æ–¹æ–‡æ¡£
+https://www.githubs.cn/top							//github å¼€æºæ’è¡Œç½‘ç«™
+http://lbsyun.baidu.com/							//ç™¾åº¦åœ°å›¾å¼€æ”¾å¹³å°
+https://cloud.tencent.com/document/product/881/20207				//è…¾è®¯webæ’­æ”¾å™¨æ’ä»¶æ–‡æ¡£
+https://help.aliyun.com/document_detail/125570.html					//é˜¿é‡Œäº‘webæ’­æ”¾å™¨æ’ä»¶æ–‡æ¡£
+https://github.com/hotoo/pinyin						//æ±‰å­—è½¬æ‹¼éŸ³æ’ä»¶
+https://www.processon.com/							//åœ¨çº¿å†™æµç¨‹å›¾
+https://github.com/bpmn-io/bpmn-js					//å·¥ä½œæµæ’ä»¶github
+https://developers.weixin.qq.com/doc/				//å¾®ä¿¡æ–‡æ¡£ç½‘ç«™
+http://nutui.jd.com/#/intro							//äº¬ä¸œç§»åŠ¨ç«¯uiæ¡†æ¶
 
 
 
