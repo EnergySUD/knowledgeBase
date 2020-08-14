@@ -33,6 +33,13 @@ git merge develop // 合并分支，合并前先切换 master分支
 
 git pull origin master // 拉取master内容
 
+git log //查看所有的commit提交记录
+
+git show //查看提交的详情
+
+git show (commitId)  //查看指定commit hashID的所有修改
+git show (commitId) (fileName)  //查看某次commit中具体某个文件的修改
+
 //仓库初始化后添加远程仓库链接
 git init
 git remote add origin git@github.com:EnergySUD/knowledgeBase.git
