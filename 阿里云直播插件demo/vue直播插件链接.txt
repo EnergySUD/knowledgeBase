@@ -33,3 +33,7 @@ https://help.aliyun.com/document_detail/125570.html
 <script charset="utf-8" type="text/javascript" src="https://g.alicdn.com/de/prismplayer/2.8.2/aliplayer-min.js"></script>
 
 接口说明文档： https://help.aliyun.com/document_detail/125572.html
+
+liveplayer播放器：（支持移动端直播）
+npm i @liveqing/liveplayer -S
+说明文档:https://www.liveqing.com/docs/manuals/LivePlayer.html#%E5%B1%9E%E6%80%A7-property
